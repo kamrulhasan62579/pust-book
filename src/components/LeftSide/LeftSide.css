@@ -1,0 +1,30 @@
+#menu_left, #menu_right, #menu_center{
+  height: 92.60vh;
+  overflow-y: scroll;
+  position: sticky;
+  width: 100%;
+}
+#menu_left::-webkit-scrollbar, #menu_right::-webkit-scrollbar, #menu_center::-webkit-scrollbar{
+    width: 12px;
+}
+
+#menu_left::-webkit-scrollbar-track, #menu_right::-webkit-scrollbar-track, #menu_center::-webkit-scrollbar-track{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#menu_left::-webkit-scrollbar-thumb, #menu_right::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: blue;
+    display: none;
+}
+#menu_center::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: blue;
+}
+.left_side:hover #menu_left::-webkit-scrollbar-thumb, .right_side:hover #menu_right::-webkit-scrollbar-thumb{
+    display: block;
+}

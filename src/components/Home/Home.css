@@ -1,0 +1,30 @@
+.home-content > div{
+    background-color: grey;
+}
+.home-content{
+  padding-top: 56px;
+  z-index: -111;
+}
+.home_container{
+    width: 100%;
+    height: 99.99vh;
+}
+
+@media only screen and (min-width: 992.1px) {
+  .left_side, .right_side {
+    display: block;
+  }
+  .home-content{
+    display: grid;
+    grid-template-columns: repeat(3, 22% 45.8% 22%);
+    grid-column-gap: 5.1%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .left_side, .right_side {
+    display: none;
+  }
+}
+
+
+
